@@ -1,0 +1,885 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+.nanummyeongjo * {
+  font-family: "Nanum Myeongjo", serif;
+}
+
+@font-face {
+  font-family: "NanumSquareNeo-Variable";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "NanumSquareNeo-Variable";
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.header {
+  width: 100%;
+  height: 200px;
+  padding: 40px 2%;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.header-wrap {
+  max-width: 1700px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-wrap .logo {
+  width: 150px;
+  height: 150px;
+}
+.header-wrap .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.header-wrap .nav-bar {
+  width: 85%;
+  margin: 0 auto;
+  height: 100%;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.header-wrap .nav-bar .etc ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-wrap .nav-bar .etc ul li {
+  padding: 30px 30px 0;
+}
+.header-wrap .nav-bar .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+.header-wrap .nav-bar .nav ul {
+  flex-basis: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+.header-wrap .nav-bar .nav ul li {
+  padding: 30px 30px 0;
+}
+.header-wrap .nav-bar .nav ul li a {
+  font-size: 24px;
+  color: #e3001b;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: "Nanum Gothic", sans-serif;
+  letter-spacing: 1px;
+}
+.header-wrap .nav-bar .nav .search-bar {
+  width: 350px;
+  height: 50px;
+  border: 3px solid #e3001b;
+  border-radius: 25px;
+  position: relative;
+  cursor: text;
+}
+.header-wrap .nav-bar .nav .search-bar::before {
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 28px;
+  position: absolute;
+  color: #e3001b;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+.header-wrap .nav-bar .nav .search-bar::after {
+  content: "검색어를 입력해주세요";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #e3001b;
+  letter-spacing: 1px;
+}
+
+.main-banner {
+  width: 100%;
+  height: 1000px;
+  margin-top: 200px;
+}
+.main-banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slogan {
+  width: 100%;
+  height: 300px;
+}
+.slogan p {
+  text-align: center;
+  line-height: 300px;
+  color: #e3001b;
+  font-size: 35px;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  white-space: nowrap;
+}
+
+.brand-desc {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  z-index: 2;
+}
+.brand-desc::before {
+  content: "";
+  background: url(/images/desc_bg.jpg) no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 3;
+}
+.brand-desc-wrap {
+  width: 1700px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand-desc-wrap .text-desc {
+  text-align: right;
+  flex-basis: 50%;
+  font-family: "S-CoreDream-3Light";
+  padding: 10px;
+}
+.brand-desc-wrap .text-desc p {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.brand-desc-wrap .text-desc h3 {
+  font-size: 44px;
+  padding-bottom: 20px;
+}
+.brand-desc-wrap .text-desc a {
+  opacity: 0.6;
+}
+.brand-desc-wrap .text-desc a:hover {
+  opacity: 1;
+}
+.brand-desc-wrap .img-desc {
+  flex-basis: 40%;
+}
+.brand-desc-wrap .img-desc ul {
+  display: flex;
+  justify-content: space-between;
+}
+.brand-desc-wrap .img-desc ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.brand-desc-wrap .img-desc ul li p {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0;
+  text-align: left;
+  position: relative;
+}
+.brand-desc-wrap .img-desc ul li p::after {
+  content: "";
+  width: 10%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+}
+.brand-desc-wrap .img-desc ul li img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.brand-desc-wrap .img-desc ul li span {
+  margin: 30px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.cookware {
+  width: 100%;
+  margin-top: 200px;
+  position: relative;
+}
+.cookware-wrap {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+.cookware-wrap .title p {
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #e3001b;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: "Nanum Gothic", sans-serif;
+  position: relative;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.cookware-wrap .title p::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: #e3001b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.cookware-wrap .cook {
+  font-size: 0;
+  width: 100%;
+  height: 700px;
+  margin-top: 200px;
+  padding: 100px 20px 0;
+  overflow: hidden;
+}
+.cookware-wrap .cook .cook-wrap .cook-slider {
+  height: 500px;
+}
+.cookware-wrap .cook .cook-wrap .cook-slider.swiper-slide {
+  transform: scale(0.9);
+}
+.cookware-wrap .cook .cook-wrap .cook-slider.swiper-slide-active {
+  transform: scale(1);
+  position: relative;
+  z-index: 10;
+}
+.cookware-wrap .cook .cook-wrap .cook-slider.swiper-slide-active::after {
+  content: "";
+  border: 4px solid #e3001b;
+  width: 98%;
+  height: 110%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  border-radius: 15px;
+  padding: 10px;
+}
+.cookware-wrap .cook .cook-wrap .cook-slider.swiper-slide-active p {
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+.cookware-wrap .cook .cook-wrap .cook-slider img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+.cookware-wrap .cook .cook-wrap .cook-slider p {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+.cookware-wrap .swiper-button-next {
+  right: 80px;
+  top: 62%;
+  color: #e3001b;
+}
+.cookware-wrap .swiper-button-prev {
+  left: 80px;
+  color: #e3001b;
+  top: 62%;
+}
+
+.product {
+  width: 100%;
+  margin-top: 200px;
+}
+.product-wrap {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+.product-wrap .title p {
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #e3001b;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: "Nanum Gothic", sans-serif;
+  position: relative;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.product-wrap .title p::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: #e3001b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.product-wrap .container {
+  margin-top: 200px;
+  overflow: hidden;
+}
+.product-wrap .container .product-wrap {
+  margin-bottom: 200px;
+}
+.product-wrap .container .product-wrap .product-content {
+  position: relative;
+}
+.product-wrap .container .product-wrap .product-content:nth-child(3n+1)::after {
+  content: "BEST";
+  width: 70px;
+  height: 70px;
+  background-color: #e3001b;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  line-height: 70px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 18px;
+}
+.product-wrap .container .product-wrap .product-content .product-image {
+  width: 300px;
+  height: 300px;
+  margin: 30px auto;
+}
+.product-wrap .container .product-wrap .product-content .product-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.product-wrap .container .product-wrap .product-content .product-txt p {
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.product-wrap .container .product-wrap .product-content .product-txt p span {
+  font-size: 18px;
+}
+.product-wrap .container .product-wrap .product-content .product-txt p::after {
+  content: "";
+  width: 110%;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.product-wrap .container .product-wrap .product-content .product-txt ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+  border-radius: 15px;
+}
+.product-wrap .container .product-wrap .product-content .product-txt ul li {
+  padding: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.product-wrap .container .product-wrap .product-content .product-txt ul li:hover {
+  opacity: 0.8;
+}
+.product-wrap .container .product-wrap .product-content .product-txt ul li a {
+  color: #fff;
+}
+.product-wrap .container .swiper-pagination .swiper-pagination-bullet-active-main {
+  background-color: #e3001b;
+}
+
+.event-section {
+  width: 100%;
+  margin-top: 200px;
+}
+.event-section .event-image {
+  height: 600px;
+  width: 100%;
+  background: url(/images/event.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+.recipe {
+  margin: 200px 0 200px;
+  width: 100%;
+}
+.recipe-wrap {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+.recipe-wrap .title {
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #e3001b;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: "Nanum Gothic", sans-serif;
+  position: relative;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.recipe-wrap .title::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: #e3001b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.recipe-wrap .recipe-content-wrap {
+  display: none;
+}
+.recipe-wrap .recipe-content-wrap .recipe-content {
+  width: 100%;
+  height: 100%;
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "S-CoreDream-3Light";
+  text-transform: uppercase;
+  position: relative;
+}
+.recipe-wrap .recipe-content-wrap .recipe-content::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #e3001b;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.recipe-wrap .recipe-content-wrap .recipe-content .re-desc {
+  width: 100%;
+  flex-basis: 33%;
+  padding-top: 70px;
+}
+.recipe-wrap .recipe-content-wrap .recipe-content .re-desc h3 {
+  font-size: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #e3001b;
+}
+.recipe-wrap .recipe-content-wrap .recipe-content .re-desc p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+.recipe-wrap .recipe-content-wrap .recipe-content .re-desc p span {
+  font-weight: bold;
+  font-size: 26px;
+}
+.recipe-wrap .recipe-content-wrap .recipe-content .re-desc > span {
+  display: block;
+  text-align: right;
+  padding-top: 50px;
+}
+.recipe-wrap .recipe-content-wrap .recipe-content .re-img {
+  flex-basis: 40%;
+  position: relative;
+  z-index: 10;
+}
+.recipe-wrap .recipe-content-wrap .recipe-content .re-img:hover img {
+  filter: blur(2px);
+}
+.recipe-wrap .recipe-content-wrap .recipe-content .re-img:hover::after {
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 120px;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e3001b;
+  cursor: pointer;
+}
+.recipe-wrap .recipe-content-wrap .recipe-content .re-img img {
+  height: 600px;
+  width: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.recipe-wrap .recipe-content-wrap .recipe-content .re-ware {
+  flex-basis: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.recipe-wrap .recipe-content-wrap .recipe-content .re-ware .re-box {
+  padding: 20px;
+}
+.recipe-wrap .recipe-content-wrap .recipe-content .re-ware .re-box:hover {
+  transform: scale(1.1);
+}
+.recipe-wrap .recipe-content-wrap .recipe-content .re-ware .re-box img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.recipe-wrap .recipe-content-wrap .recipe-content .re-ware .re-box p {
+  font-size: 18px;
+  padding: 5px 0;
+  font-weight: bold;
+  text-align: center;
+}
+.recipe-wrap .recipe-content-wrap .recipe-content .re-ware .re-box p:nth-child(3) {
+  font-size: 14px;
+}
+.recipe-wrap .arrow {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 100px;
+}
+.recipe-wrap .arrow-prev, .recipe-wrap .arrow-next {
+  background-color: #e3001b;
+  padding: 20px;
+  cursor: pointer;
+}
+.recipe-wrap .arrow-prev i, .recipe-wrap .arrow-next i {
+  font-size: 30px;
+  color: #fff;
+}
+
+.guide {
+  width: 100%;
+}
+.guide .title {
+  width: 1700px;
+  margin: 0 auto;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #e3001b;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: "Nanum Gothic", sans-serif;
+  position: relative;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.guide .title::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: #e3001b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.guide-section {
+  width: 100%;
+  margin-top: 200px;
+}
+.guide-section .guide-box {
+  height: 350px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.guide-section .guide-box a {
+  display: block;
+  font-family: "S-CoreDream-3Light";
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: right;
+  line-height: 350px;
+  padding-right: 50px;
+  position: relative;
+  z-index: 100;
+}
+.guide-section .guide-box:nth-child(1) {
+  background: url(/images/guide_6.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.guide-section .guide-box:nth-child(1):hover::after {
+  content: "";
+  position: absolute;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+}
+.guide-section .guide-box:nth-child(1) a {
+  position: relative;
+}
+.guide-section .guide-box:nth-child(1) a::after {
+  content: "쿡웨어에 따른 올바른 사용법을 알려드립니다.";
+  font-size: 20px;
+  position: absolute;
+  top: 70px;
+  right: 100px;
+}
+.guide-section .guide-box:nth-child(1) a::before {
+  content: "\f138";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  position: absolute;
+  top: 70px;
+  right: 50px;
+}
+.guide-section .guide-box:nth-child(2) {
+  width: 90%;
+  background: url(/images/guide_2.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.guide-section .guide-box:nth-child(2):hover::after {
+  content: "";
+  position: absolute;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+}
+.guide-section .guide-box:nth-child(2) a {
+  position: relative;
+}
+.guide-section .guide-box:nth-child(2) a::after {
+  content: "최고의 주물 냄비와 오랜 시간 함께 해보세요.";
+  font-size: 20px;
+  position: absolute;
+  top: 70px;
+  right: 100px;
+}
+.guide-section .guide-box:nth-child(2) a::before {
+  content: "\f138";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  position: absolute;
+  top: 70px;
+  right: 50px;
+}
+.guide-section .guide-box:nth-child(3) {
+  width: 80%;
+  background: url(/images/guide_4.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.guide-section .guide-box:nth-child(3):hover::after {
+  content: "";
+  position: absolute;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+}
+.guide-section .guide-box:nth-child(3) a {
+  position: relative;
+}
+.guide-section .guide-box:nth-child(3) a::after {
+  content: "쉽고 간편한 세척법을 안내해드립니다.";
+  font-size: 20px;
+  position: absolute;
+  top: 70px;
+  right: 100px;
+}
+.guide-section .guide-box:nth-child(3) a::before {
+  content: "\f138";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  position: absolute;
+  top: 70px;
+  right: 50px;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 200px;
+  border-top: 2px solid #e3001b;
+  display: flex;
+}
+.footer-wrap {
+  flex-basis: 80%;
+}
+.footer-wrap .f-top ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-wrap .f-top ul li {
+  padding: 20px;
+  position: relative;
+}
+.footer-wrap .f-top ul li:not(:first-child)::after {
+  content: "";
+  height: 30%;
+  width: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.footer-wrap .info {
+  width: 90%;
+  margin: 0 auto;
+}
+.footer-wrap .info .f-center {
+  display: flex;
+  align-items: center;
+}
+.footer-wrap .info .f-center .logo {
+  flex-basis: 20%;
+}
+.footer-wrap .info .f-center .logo img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.footer-wrap .info .f-center .s-desc {
+  flex-basis: 75%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  position: relative;
+}
+.footer-wrap .info .f-center .s-desc::after {
+  content: "";
+  height: 80%;
+  width: 1px;
+  background-color: #e3001b;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.footer-wrap .info .f-center .s-desc p {
+  font-size: 24px;
+  font-weight: bold;
+}
+.footer-wrap .info .f-center .s-desc ul li {
+  padding: 0 40px 30px;
+}
+.footer-wrap .info .f-center .s-desc .s-detail {
+  display: flex;
+}
+.footer-wrap .info .f-center .s-desc .s-info {
+  display: flex;
+}
+.footer-wrap .info .f-bottom {
+  margin-top: 120px;
+  padding: 50px 0 30px;
+  text-align: center;
+}
+.footer .call-center {
+  flex-basis: 25%;
+  background-color: #e3001b;
+  text-align: center;
+  color: #fff;
+  padding-top: 140px;
+}
+.footer .call-center p {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+.footer .call-center p:nth-child(1) {
+  font-size: 30px;
+}
+.footer .call-center p:nth-child(2) {
+  font-size: 45px;
+  padding: 40px 0;
+  position: relative;
+}
+.footer .call-center p:nth-child(2)::after {
+  content: "";
+  width: 70%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 25px;
+}
+.footer .call-center p:nth-child(5) {
+  margin-top: 100px;
+  padding: 50px 0 20px;
+}
+.footer .call-center span {
+  font-size: 20px;
+  padding: 40px 20px;
+  position: relative;
+}
+.footer .call-center span:nth-of-type(2)::after {
+  content: "";
+  height: 30%;
+  width: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}/*# sourceMappingURL=index.css.map */

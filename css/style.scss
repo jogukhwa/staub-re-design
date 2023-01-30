@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+
+$main-red : #e3001b;
+$point-font : 'S-CoreDream-3Light';
+$menu-fz : 35px;
+$max-wid: 1700px;
+$mar-top : 200px;
+$content-top : 200px;
+
+
+@mixin nav {
+    
+    font-size: 24px;
+    color: $main-red;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing: 1px;
+}
+
+@mixin title {
+    font-size: 35px;
+    text-transform: uppercase;
+    color: $main-red;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-family: 'Nanum Gothic', sans-serif;
+    position: relative;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    &::after{
+        content: "";
+        width: 50%;
+        height: 2px;
+        background-color: $main-red;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+
+@mixin center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+@mixin dark-bg{
+    &::after{
+        content: "";
+        position: absolute;
+        opacity: 0.1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #000;
+    }
+}
+
+
+@mixin side-bar{
+    position: relative;
+    &:not(:first-child){
+        &::after{
+            content: "";
+            height: 30%;
+            width: 1px;
+            background-color: #000;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+.nanummyeongjo * {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
