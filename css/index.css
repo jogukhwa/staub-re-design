@@ -64,8 +64,7 @@ html, body {
 .header-wrap .logo img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .header-wrap .nav-bar {
   width: 85%;
@@ -130,16 +129,6 @@ html, body {
   border-color: #e3001b;
   border-radius: 30px;
 }
-.header-wrap .nav-bar .nav .search-bar input::-moz-placeholder {
-  font-size: 16px;
-  color: #e3001b;
-  letter-spacing: 1px;
-}
-.header-wrap .nav-bar .nav .search-bar input:-ms-input-placeholder {
-  font-size: 16px;
-  color: #e3001b;
-  letter-spacing: 1px;
-}
 .header-wrap .nav-bar .nav .search-bar input::placeholder {
   font-size: 16px;
   color: #e3001b;
@@ -154,8 +143,7 @@ html, body {
 .main-banner img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .slogan {
@@ -181,7 +169,7 @@ html, body {
 }
 .brand-desc::before {
   content: "";
-  background: url(/images/desc_bg.jpg) no-repeat;
+  background: url(../images/desc_bg.jpg) no-repeat;
   background-size: cover;
   opacity: 0.5;
   position: absolute;
@@ -330,8 +318,7 @@ html, body {
 .cookware-wrap .cook .cook-wrap .cook-slider img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 15px;
 }
 .cookware-wrap .cook .cook-wrap .cook-slider p {
@@ -412,8 +399,7 @@ html, body {
 .product-wrap .container .product-wrap .product-content .product-image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .product-wrap .container .product-wrap .product-content .product-txt p {
   font-size: 24px;
@@ -464,7 +450,7 @@ html, body {
 .event-section .event-image {
   height: 600px;
   width: 100%;
-  background: url(/images/event.jpg) no-repeat;
+  background: url(../images/event.jpg) no-repeat;
   background-size: 100% 100%;
 }
 
@@ -568,8 +554,7 @@ html, body {
 .recipe-wrap .recipe-content-wrap .recipe-content .re-img img {
   height: 600px;
   width: 600px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
 }
 .recipe-wrap .recipe-content-wrap .recipe-content .re-ware {
@@ -662,7 +647,7 @@ html, body {
   z-index: 100;
 }
 .guide-section .guide-box:nth-child(1) {
-  background: url(/images/guide_6.jpg) no-repeat center;
+  background: url(../images/guide_6.jpg) no-repeat center;
   background-size: cover;
   position: relative;
 }
@@ -697,7 +682,7 @@ html, body {
 }
 .guide-section .guide-box:nth-child(2) {
   width: 90%;
-  background: url(/images/guide_2.jpg) no-repeat center;
+  background: url(../images/guide_2.jpg) no-repeat center;
   background-size: cover;
   position: relative;
 }
@@ -732,7 +717,7 @@ html, body {
 }
 .guide-section .guide-box:nth-child(3) {
   width: 80%;
-  background: url(/images/guide_4.jpg) no-repeat center;
+  background: url(../images/guide_4.jpg) no-repeat center;
   background-size: cover;
   position: relative;
 }
@@ -807,8 +792,7 @@ html, body {
 .footer-wrap .info .f-center .logo img {
   width: 100px;
   height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .footer-wrap .info .f-center .s-desc {
   flex-basis: 75%;

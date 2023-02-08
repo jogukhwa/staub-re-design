@@ -144,7 +144,7 @@ html,body{
     z-index: 2;
     &::before{
         content: "";
-        background: url(images/desc_bg.jpg) no-repeat ;
+        background: url(../images/desc_bg.jpg) no-repeat ;
         background-size: cover;
         opacity: 0.5;
         position: absolute;
@@ -404,7 +404,7 @@ html,body{
     .event-image{
         height: 600px;
         width: 100%;
-        background: url(images/event.jpg) no-repeat;
+        background: url(../images/event.jpg) no-repeat;
         background-size: 100% 100%;
     }
 }
@@ -564,7 +564,7 @@ html,body{
                 z-index: 100;
             }
             &:nth-child(1){
-                background: url(images/guide_6.jpg) no-repeat center;
+                background: url(../images/guide_6.jpg) no-repeat center;
                 background-size: cover;
                 position: relative;
                 &:hover{
@@ -592,7 +592,7 @@ html,body{
             }
             &:nth-child(2){
                 width: 90%;
-                background: url(images/guide_2.jpg) no-repeat center;
+                background: url(../images/guide_2.jpg) no-repeat center;
                 background-size: cover;
                 position: relative;
                 &:hover{
@@ -620,7 +620,7 @@ html,body{
             }
             &:nth-child(3){
                 width: 80%;
-                background: url(images/guide_4.jpg) no-repeat center;
+                background: url(../images/guide_4.jpg) no-repeat center;
                 background-size: cover;
                 position: relative;
                 &:hover{
