@@ -108,10 +108,7 @@ html, body {
 .header-wrap .nav-bar .nav .search-bar {
   width: 350px;
   height: 50px;
-  border: 3px solid #e3001b;
-  border-radius: 25px;
   position: relative;
-  cursor: text;
 }
 .header-wrap .nav-bar .nav .search-bar::before {
   content: "\f002";
@@ -124,12 +121,26 @@ html, body {
   left: 10%;
   transform: translateY(-50%);
 }
-.header-wrap .nav-bar .nav .search-bar::after {
-  content: "검색어를 입력해주세요";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.header-wrap .nav-bar .nav .search-bar input {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+  outline: none;
+  border-color: #e3001b;
+  border-radius: 30px;
+}
+.header-wrap .nav-bar .nav .search-bar input::-moz-placeholder {
+  font-size: 16px;
+  color: #e3001b;
+  letter-spacing: 1px;
+}
+.header-wrap .nav-bar .nav .search-bar input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #e3001b;
+  letter-spacing: 1px;
+}
+.header-wrap .nav-bar .nav .search-bar input::placeholder {
   font-size: 16px;
   color: #e3001b;
   letter-spacing: 1px;
